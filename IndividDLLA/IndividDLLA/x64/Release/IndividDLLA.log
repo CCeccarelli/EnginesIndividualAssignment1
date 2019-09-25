@@ -1,0 +1,19 @@
+﻿  SaveLoad.cpp
+c:\users\christian\desktop\school\year 4 semester 1\engines\individa1\individdlla\individdlla\saveload.h(12): warning C4251: 'SaveLoad::myfile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'SaveLoad'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd(626): note: see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+c:\users\christian\desktop\school\year 4 semester 1\engines\individa1\individdlla\individdlla\saveload.h(13): warning C4251: 'SaveLoad::lfile': class 'std::basic_ifstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'SaveLoad'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd(625): note: see declaration of 'std::basic_ifstream<char,std::char_traits<char>>'
+  Wrapper.cpp
+c:\users\christian\desktop\school\year 4 semester 1\engines\individa1\individdlla\individdlla\saveload.h(12): warning C4251: 'SaveLoad::myfile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'SaveLoad'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd(626): note: see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+c:\users\christian\desktop\school\year 4 semester 1\engines\individa1\individdlla\individdlla\saveload.h(13): warning C4251: 'SaveLoad::lfile': class 'std::basic_ifstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'SaveLoad'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd(625): note: see declaration of 'std::basic_ifstream<char,std::char_traits<char>>'
+c:\users\christian\desktop\school\year 4 semester 1\engines\individa1\individdlla\individdlla\wrapper.h(13): warning C4190: 'loadFile' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+     Creating library C:\Users\Christian\Desktop\School\Year 4 Semester 1\Engines\IndividA1\IndividDLLA\x64\Release\IndividDLLA.lib and object C:\Users\Christian\Desktop\School\Year 4 Semester 1\Engines\IndividA1\IndividDLLA\x64\Release\IndividDLLA.exp
+  Generating code
+  51 of 230 functions (22.2%) were compiled, the rest were copied from previous compilation.
+    28 functions were new in current compilation
+    45 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  IndividDLLA.vcxproj -> C:\Users\Christian\Desktop\School\Year 4 Semester 1\Engines\IndividA1\IndividDLLA\x64\Release\IndividDLLA.dll
