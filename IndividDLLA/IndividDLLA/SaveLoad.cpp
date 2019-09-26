@@ -8,20 +8,65 @@ void SaveLoad::saveFile(float x, float y, float z) {
     myfile.close();
 }
 
-char SaveLoad::loadFile() {
+int SaveLoad::loadFileX() {
 
     lfile.open("pos.txt");
-    char line[99];
-	string s(line);
+    
+	string line;
+
 
     if (lfile.is_open()) {
-        while (getline(lfile, s)) {
+        while (getline(lfile, line)) {
 
         }
 
     }
-	s = line;
-    
+
     lfile.close();
-	return line[99];
+	string subs = line.substr(0, line.find(","));
+	int x = stoi(subs);
+	return x;
+}
+
+int SaveLoad::loadFileY() {
+
+	lfile.open("pos.txt");
+
+	string line;
+
+
+	if (lfile.is_open()) {
+		while (getline(lfile, line)) {
+
+		}
+
+	}
+
+	lfile.close();
+	string subs = line.substr(line.find(",") + 1);
+	string subs2 = subs.substr(0, subs.find(","));
+	int y = stoi(subs2);
+
+	return y;
+}
+
+int SaveLoad::loadFileZ() {
+	lfile.open("pos.txt");
+
+	string line;
+
+
+	if (lfile.is_open()) {
+		while (getline(lfile, line)) {
+
+		}
+
+	}
+
+	lfile.close();
+	string subs = line.substr(line.find(",") + 1);
+	string subs2 = subs.substr(subs.find(",") + 1);
+	int z = stoi(subs2);
+
+	return z;
 }

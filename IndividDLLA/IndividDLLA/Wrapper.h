@@ -10,7 +10,9 @@ extern "C"
 
     PLUGIN_API void saveFile(float x, float y, float z);
 
-    PLUGIN_API char loadFile();
+    PLUGIN_API int loadFileX();
+	PLUGIN_API int loadFileY();
+	PLUGIN_API int loadFileZ();
 
 #ifdef __cplusplus
 }
