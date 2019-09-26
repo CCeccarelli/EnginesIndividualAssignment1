@@ -12,6 +12,6 @@ public:
     ofstream myfile;
     ifstream lfile;
     void saveFile(float x, float y, float z);
-    string loadFile();
+    char loadFile();
 
 };

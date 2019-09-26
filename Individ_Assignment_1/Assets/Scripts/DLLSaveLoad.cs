@@ -17,7 +17,7 @@ public class DLLSaveLoad : MonoBehaviour
     private static extern void saveFile(float x, float y, float z);
 
     [DllImport(DLL_NAME)]
-    private static extern string loadFile();
+    private static extern char loadFile();
     // Start is called before the first frame update
     void Start()
     {
@@ -37,11 +37,14 @@ public class DLLSaveLoad : MonoBehaviour
 
     void LoadOnClick()
     {
-        string data = loadFile();
-        //string data = "10,10,10";
-        string[] temp = data.Split(',');
+        char data = loadFile();
 
-        player.transform.position = new Vector3(float.Parse(temp[0]), float.Parse(temp[1]), float.Parse(temp[2]));
+        //string data = "10,10,10";
+        string temp = data.ToString();
+
+        temp.Split(',');
+
+        player.transform.position = new Vector3(float.Parse(temp[0].ToString()), float.Parse(temp[1].ToString()), float.Parse(temp[2].ToString()));
         //player.transform.position = new Vector3(5, 5, 5);
     }
 }

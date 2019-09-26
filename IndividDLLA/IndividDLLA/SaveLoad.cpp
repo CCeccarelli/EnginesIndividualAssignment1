@@ -8,19 +8,20 @@ void SaveLoad::saveFile(float x, float y, float z) {
     myfile.close();
 }
 
-string SaveLoad::loadFile() {
+char SaveLoad::loadFile() {
 
     lfile.open("pos.txt");
-    string line;
+    char line[99];
+	string s(line);
 
     if (lfile.is_open()) {
-        while (getline(lfile, line)) {
+        while (getline(lfile, s)) {
 
         }
 
     }
+	s = line;
     
     lfile.close();
-
-    return line;
+	return line[99];
 }
